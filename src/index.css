@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Roboto", sans-serif;
+}
+@layer base {
+  body {
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#225666] to-[#61dafb] text-white hover:animate-pulse duration-500 w-[160px] mb-4 p-2 font-semibold tracking-wider
+  }
+  form input {
+    @apply p-2 mb-4 border-[#282c34] border-2
+  }
+  svg{
+    @apply text-2xl text-[#282c34] mb-2 rounded-full 
+  }
+  svg:hover{
+    @apply text-[#61dafb] scale-125 ease-in duration-300
+  }
+}
+@layer components {
+  .hide {
+    @apply hidden;
+  }
+  .header {
+    @apply bg-[#282c34] text-[#61dafb] text-center p-4;
+  }
+  .footer{
+    @apply h-[200px] flex items-center justify-center bg-[#282c34] text-white
+  }
+  .footer span{
+    @apply font-bold text-[#61dafb]
+  }
+  .main{
+    @apply min-h-[60vh] text-center p-8 flex justify-center mx-auto
+  }
+  .input-container {
+    @apply flex flex-col text-left
+  }
+  .modal{
+    @apply text-sm absolute top-[20%] left-0 right-0 mx-auto w-[500px] h-[400px] z-10 bg-white flex flex-col justify-center text-center rounded-xl
+  }
+  .modal h2{
+    @apply mb-4
+  }
+  .modal form {
+    @apply w-[90%]
+  }
+  .fade{
+    @apply w-full h-full absolute bg-black opacity-40 z-0
+  }
 }
