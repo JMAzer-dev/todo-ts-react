@@ -52,13 +52,13 @@ body {
     @apply bg-[#282c34] text-[#61dafb] text-center p-4;
   }
   .footer{
-    @apply h-[200px] flex items-center justify-center bg-[#282c34] text-white
+    @apply lg:h-[200px] h-[100px] flex items-center justify-center bg-[#282c34] text-white
   }
   .footer span{
     @apply font-bold text-[#61dafb]
   }
   .main{
-    @apply min-h-[60vh] text-center p-8 flex justify-center mx-auto
+    @apply max-w-[1240px] w-[50%] text-center p-8 flex justify-center mx-auto
   }
   .input-container {
     @apply flex flex-col text-left

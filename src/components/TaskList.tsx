@@ -17,7 +17,7 @@ const TaskList = ({ taskList, handleDelete, handleEdit }: Props) => {
         taskList.map((task) => (
           <div
             key={task.id}
-            className="flex justify-between border-b-4 mb-8 border-[#61dafb] max-w-[350px] mx-auto hover:shadow-xl hover:shadow-[#61dafb] duration-700"
+            className="flex justify-between border-b-4 mb-8 border-[#61dafb] w-[280px] md:max-w-[350px] mx-auto hover:shadow-xl hover:shadow-[#61dafb] duration-700"
           >
             <div className="ml-16">
               <h4>Tarefa: {task.title}</h4>

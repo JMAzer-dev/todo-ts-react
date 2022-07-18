@@ -68,10 +68,10 @@ const TaskForm = ({
   return (
     <form
       onSubmit={addTaskHandler}
-      className="flex flex-col justify-center max-w-[400px] m-auto items-center"
+      className="flex flex-col justify-center  m-auto items-center"
     >
-      <div className="flex justify-center items-center hover:shadow-[#61dafb] hover:shadow-lg duration-500 ease-in rounded-md mb-8 ">
-        <div>
+      <div className=" flex flex-col md:flex-row justify-between items-center hover:shadow-[#61dafb] hover:shadow-lg duration-500 ease-in rounded-xl mb-8 w-[200px] md:w-[400px] lg:max-w-[600px] ">
+        <div className="max-w-[150px] md:max-w-[190px]">
           <label className="input-container font-bold m-2">
             <span>Título: </span>
             <input
@@ -81,11 +81,11 @@ const TaskForm = ({
               placeholder="Título da tarefa"
               onChange={handleChange}
               value={title}
-              className="rounded-md"
+              className="rounded-md "
             />
           </label>
         </div>
-        <div className="ml-6">
+        <div className="max-w-[130px] md:max-w-[170px]">
           <div>
             <label className="input-container font-bold m-2">
               <span>Horas: </span>
@@ -95,7 +95,7 @@ const TaskForm = ({
                 placeholder="Horário da tarefa"
                 onChange={handleChange}
                 value={time}
-                className="rounded-md"
+                className="rounded-md "
               />
             </label>
           </div>
@@ -110,7 +110,7 @@ const TaskForm = ({
                 placeholder="Duração da tarefa"
                 onChange={handleChange}
                 value={timeSpent}
-                className="rounded-md"
+                className="rounded-md "
               />
             </label>
           </div>
