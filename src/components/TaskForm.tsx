@@ -70,8 +70,8 @@ const TaskForm = ({
       onSubmit={addTaskHandler}
       className="flex flex-col justify-center  m-auto items-center"
     >
-      <div className=" flex flex-col md:flex-row justify-between items-center hover:shadow-[#61dafb] hover:shadow-lg duration-500 ease-in rounded-xl mb-8 w-[200px] md:w-[400px] lg:max-w-[600px] ">
-        <div className="max-w-[150px] md:max-w-[190px]">
+      <div className=" flex flex-col md:flex-row justify-between items-center hover:shadow-[#61dafb] hover:shadow-lg duration-500 ease-in rounded-xl mb-8 w-[300px] max-w-[300px] md:w-[400px] md:max-w-[600px] ">
+        <div className="max-w-[200px] md:max-w-[190px]">
           <label className="input-container font-bold m-2">
             <span>Título: </span>
             <input
@@ -85,7 +85,7 @@ const TaskForm = ({
             />
           </label>
         </div>
-        <div className="max-w-[130px] md:max-w-[170px]">
+        <div className="max-w-[200px] md:max-w-[190px]">
           <div>
             <label className="input-container font-bold m-2">
               <span>Horas: </span>
